@@ -4,8 +4,8 @@ $(function() {
     url: 'https://www.codeschool.com/users/3459063.json',
     dataType: 'jsonp',
     success: function(response) {
-      console.log('courses in-progress', response.courses.completed)
-      addCourses(response.courses.completed)
+      console.log('courses in-progress', response.courses.in_progress)
+      addCourses(response.courses.in_progress)
     }
   });
 
